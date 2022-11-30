@@ -12,7 +12,14 @@ export default function App() {
     {id:4, task:"Fourth todo", completed: false},
     {id:5, task:"Fifth todo", completed: false},
     {id:6, task:"Sixth todo", completed: true},
-    {id:7, task:"Seventh todo", completed: true},])
+    {id:7, task:"Seventh todo", completed: true},
+    {id:8, task:"Eight todo", completed: false},
+    {id:9, task:"Ninth todo", completed: false},
+    {id:10, task:"Tenth todo", completed: true},
+    {id:11, task:"Eleventh todo", completed: true}
+  ])
+
+  
   
   const ListItem = ({todo}) =>{
     return (<View style = {styles.listItem}>
