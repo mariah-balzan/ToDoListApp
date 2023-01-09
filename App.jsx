@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { useFonts } from "expo-font";
+
 const COLORS = {primary: '#00A0F3', white: '#fff', background:'#FAFBF4'};
 
 export default function App() {
 
-  const [todos, setTodos] = React.useState([
+  let[fontsLoaded] = useFonts({
+    'Comfortaa' : require('./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf'),
+    })
+
+  const [todos, setTodos] = useState([
     {id:1, task:"First todo", completed: true},
     {id:2, task:"Second todo", completed: false},
     {id:3, task:"Third todo", completed: true},
@@ -19,17 +25,11 @@ export default function App() {
     {id:11, task:"Eleventh todo", completed: true}
   ])
 
-  
-  
   const ListItem = ({todo}) =>{
     return (<View style = {styles.listItem}>
       <View style={{flex:1}}>
         <Text 
-          style={{
-            fontWeight:'bold', 
-            fontSize:16, 
-            color:'black' ,
-            textDecorationLine: todo?.completed ? 'line-through' : 'none',}}>
+        style={[styles.item, { textDecorationLine: todo?.completed ? 'line-through' : 'none'}]}>
             {todo?.task}
           </Text>
         </View>
@@ -83,6 +83,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.background,
+    flexDirection: 'column',
+    justifyContent:'center'
   },
   header:{
     padding: 20,
@@ -94,6 +96,14 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     fontSize: 32,
     color:'#00A0F3',
+    fontFamily:'Comfortaa'
+  },
+  item:{
+    flexDirection:'row',
+    fontWeight:'bold', 
+    fontFamily:'Comfortaa',
+    fontSize:17, 
+    color:'black'
   },
       footer:{
         position: 'relative',
@@ -104,16 +114,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
       },
       inputContainer:{
-        elevation:40,
         flex:1,
         flexDirection:'row',
+        elevation:40,
         height:50,
         marginVertical:20,
         marginRight:20,
         borderRadius:30,
         paddingHorizontal:20,
-        borderColor:'#000066',
-        borderWidth:0.8,
+        borderColor:'#3E424B',
+        borderWidth:1,
         backgroundColor: COLORS.white,
       },
       iconContainer:{
@@ -132,6 +142,7 @@ const styles = StyleSheet.create({
         elevation: 12,
         borderRadius: 10,
         marginVertical: 10,
+        shadowOpacity:0.1
       },
       actionIcon:{
         height: 34,
