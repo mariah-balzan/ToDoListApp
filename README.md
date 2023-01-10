@@ -32,4 +32,6 @@ Copy and paste any missing dependencies into your package.json:
 run npm install --force
 
 # Adding logic functionality
-
+```
+npx start
+```
