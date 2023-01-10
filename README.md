@@ -50,3 +50,82 @@ const addTodo = () => {
           onChangeText={text => setTextInput(text)}
 /> 
 ```
+4. Call ```addTodo``` method in iconContainer. Should look as follows: 
+```
+ <TouchableOpacity onPress={addTodo}>
+          <View style={styles.iconContainer}>
+          <Icon name="add" color="white" size={30} />
+          </View>
+        </TouchableOpacity>
+```
+5. Inside addTodo method, add ```if statement``` to not allow null todos
+```
+if(textInput ==""){
+        Alert.alert("Error: Empty todo", "Please input todo :)")
+      }else{
+            //Check that button works on press
+            console.log(textInput)
+            // Logic 5
+            const newTodo = {
+              id:Math.random(),
+              task: textInput, 
+              completed: false,
+            };
+            // This will keep the previous todos and the new inputs
+            setTodos([...todos, newTodo])
+          }
+```
+6. Create ```markToDoComplete``` method
+
+```
+ const markToDoComplete = todoId => {
+    //Logic 9:
+      //Check that id is correct in console first 
+      //console.log(todoId)
+      //Functionaility:
+      const newTodosItem = todos.map(item => {
+        if(item.id == todoId){
+            return{...item, completed:true}
+        }
+        return item
+      })
+      setTodos(newTodosItem)
+  }
+```
+7. Call todo id if completed from ```ListItem```. Should look as follows:
+
+```
+{!todo?.completed && (
+        <TouchableOpacity style={[styles.actionIcon, {backgroundColor:'green'}]} onPress={() => markToDoComplete(todo?.id)}>
+          <Icon name="done" color={COLORS.white} size={30} />
+        </TouchableOpacity>
+        )}
+```  
+8. Create ```deleteTodo``` method
+
+```
+const deleteTodo = (todoId) => {
+    const newTodos = todos.filter(item => item.id != todoId);
+    // Set todos as an empty array
+    setTodos(newTodos);
+  }
+```
+9. Call todo id if de from ```ListItem```. Should look as follows:
+```
+<TouchableOpacity style={styles.actionIcon} onPress = {() => deleteTodo(todo?.id)}>
+          <Icon name="delete" color={COLORS.white} size={26} />
+        </TouchableOpacity>
+```  
+10. Create ```clearTodos``` method
+```
+const clearTodos = () => {
+    //console.log("empty")
+    Alert.alert("Confirm?", "Clear To Do List?",[
+      {text: "Yes",
+      onPress: () => setTodos([])
+    },
+      {text: "No",
+    }
+    ])
+  }
+```  
