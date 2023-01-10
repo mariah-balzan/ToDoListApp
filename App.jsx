@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, FlatList, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useFonts } from "expo-font";
-import AppLoading from 'expo-app-loading';
 
-const COLORS1 = {primary: '#00A0F3', white: '#fff', background:'#FAFBF4'};
 const COLORS = {primary: '#00A0F3', white: '#fff', background:'#FAFBF4'};
 export default function App() {
   let[fontsLoaded] = useFonts({
