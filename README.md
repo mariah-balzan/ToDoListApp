@@ -31,7 +31,22 @@ Copy and paste any missing dependencies into your package.json:
 
 run npm install --force
 
-# Adding logic functionality
+# Adding logic functionality in App.jsx
+1. Declare textInput state constant to store user input:
 ```
-npx start
+const[textInput, setTextInput] = useState('');
+```
+2. Create addTodo function. This will allow user inputs from keyboard and once button is pushed, it will populate list
+```
+const addTodo = () => {
+
+}
+```
+3. In Footer section call state setter. Should look as follows: 
+```
+<TextInput placeholder="Add To Do" 
+         style={{fontFamily:'Comfortaa'}}
+         value = {textInput}
+          onChangeText={text => setTextInput(text)}
+/> 
 ```
