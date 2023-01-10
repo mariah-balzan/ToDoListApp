@@ -192,12 +192,12 @@ import { Button } from "@react-native-material/core";
 
 We would like this button to become outlined and to replace our clear todos icon in the top right -> locate Delete Icon```<Icon name="delete" size={30} color="red" onPress={clearTodos}/>
       ``` and replace it with the below
-<Button
+-```<Button
       variant="outlined"
       title="Delete"
       color="red"
       leading={<Icon name="delete" {clearTodos} />}
-    />
+    />```
 
 # Conclusion: implementing of visual cues: 
 - implement Loading code to show button is being pressed. refer to https://www.react-native-material.com/docs/components/button#loading
