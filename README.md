@@ -36,7 +36,7 @@ run npm install --force
 ```
 const[textInput, setTextInput] = useState('');
 ```
-2. Create addTodo function. This will allow user inputs from keyboard and once button is pushed, it will populate list
+2. Create ```addTodo``` method. This will allow user inputs from keyboard and once button is pushed, it will populate list
 ```
 const addTodo = () => {
 
