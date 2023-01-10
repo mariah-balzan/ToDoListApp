@@ -196,8 +196,9 @@ We would like this button to become outlined and to replace our clear todos icon
 -```<Button
       variant="outlined"
       title="Delete"
-      color="red"
-      leading={<Icon name="delete" {clearTodos} />}
+      color='red'
+      onPress={clearTodos}
+      leading={(<Icon name="delete" />)}
     />```
 
 # Conclusion: implementing of visual cues: 
