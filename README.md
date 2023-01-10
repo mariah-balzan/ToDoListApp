@@ -1,25 +1,60 @@
 # CIS3186-material.io Presentation
 
-This ToDoListApp aims to show you how to integrate Material.io components. 
+This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font.
 
 # Team 2
 > Mariah Balzan,
 > Nicole Bezzina,
 > Steve Galea
 
+# Part 1: Setup | Example 1: using Material Icons | Notes on Accessibility & UI Choice (Time required: 5-10 mins)
+
 # Prerequisites
 - Install master branch
 - Make sure all required dependencies are installed
 - Run expo start/ npx run start and test app (without added logic functionality)
 
-We will be using material icons Google font Comfortaa for this project, as a demonstration of using Material.io components.
-- npm i react-native-vector-icons
-- npm i expo-font
+We will be using material icons Google font Comfortaa for this project, as a demonstration (in Part 1) of using Material.io components. 
+```
+npm i react-native-vector-icons
+```
 
-# Package.json
+We will then use another material library, and adapt our code together (in Part 3) [ https://www.react-native-material.com/docs/components/ ] 
+```
+npm i @react-native-material/core
+```
+
+Other dependencies needed
+```
+npm i expo-font
+```
+```
+npm i expo
+```
+```
+npm i expo-app-loading
+```
+```
+npm i expo-splash-screen
+```
+```
+npm i expo-status-bar
+```
+```
+npm i react
+```
+```
+npm i react-native
+```
+```
+npm i @react-native-async-storage/async-storage
+```
+
+# Package.json [skip if every dependency was installed well]
 Double check the package.json
 Copy and paste any missing dependencies into your package.json:
    -  "@react-native-async-storage/async-storage": "^1.17.11",
+   -  "@react-native-material/core": "^1.3.7",
    -  "expo": "~47.0.8",
    -  "expo-app-loading": "^2.1.1",
    -  "expo-font": "^11.0.1",
@@ -28,10 +63,21 @@ Copy and paste any missing dependencies into your package.json:
    -  "react": "18.1.0",
   -   "react-native": "0.70.5",
   -   "react-native-vector-icons": "^9.2.0"
+```
+npm install --force or npm i <<dependency>>
+```
 
-run npm install --force
+# Note: Accessibility & User interface notes
+every icon is a circle (easy to click)
+- colours contrast well to each other
+- icons are descriptive enough 
+- emphasis on simple screens
+- easy to read text- ample line spacing and padding
+- font size and weight are well chosen
 
-# Adding logic functionality in App.jsx
+# Part 2: Adding Logic (Time required: 5-10 mins)
+
+#     Go to App.jsx
 1. Declare textInput state constant to store user input:
 ```
 const[textInput, setTextInput] = useState('');
@@ -129,3 +175,29 @@ const clearTodos = () => {
     ])
   }
 ```  
+
+Notes: Now we have a fully functional todolist application.
+- application is ready for part 3...
+
+# Part 3: Adding additional components (example, add a button...)
+Consider you would like to add a react native button (refer to below link)
+```https://www.react-native-material.com/docs/components/button```
+
+Import your button
+```
+import { Button } from "@react-native-material/core";
+
+import Icon from "@expo/vector-icons/MaterialCommunityIcons";
+```
+
+We would like this button to become outlined and to replace our clear todos icon in the top right 
+<Button
+      variant="outlined"
+      title="Delete"
+      leading={props => <Icon name="delete" {clearTodos} />}
+    />
+
+# Conclusion: implementing of visual cues: 
+- implement Loading code to show button is being pressed. refer to https://www.react-native-material.com/docs/components/button#loading
+
+# Thank you for your attention...
