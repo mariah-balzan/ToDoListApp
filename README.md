@@ -76,6 +76,8 @@ every icon is a circle (easy to click)
 - font size and weight are well chosen
 
 # Part 2: Adding Logic (Time required: 5-10 mins)
+Do all below while running
+```expo start```
 
 #     Go to App.jsx
 1. Declare textInput state constant to store user input:
@@ -183,16 +185,18 @@ Notes: Now we have a fully functional todolist application.
 Consider you would like to add a react native button (refer to below link)
 ```https://www.react-native-material.com/docs/components/button```
 
-Import your button
+Import your button:
 ```
 import { Button } from "@react-native-material/core";
 ```
 
-We would like this button to become outlined and to replace our clear todos icon in the top right 
+We would like this button to become outlined and to replace our clear todos icon in the top right -> locate Delete Icon```<Icon name="delete" size={30} color="red" onPress={clearTodos}/>
+      ``` and replace it with the below
 <Button
       variant="outlined"
       title="Delete"
-      leading={props => <Icon name="delete" {clearTodos} />}
+      color="red"
+      leading={<Icon name="delete" {clearTodos} />}
     />
 
 # Conclusion: implementing of visual cues: 
