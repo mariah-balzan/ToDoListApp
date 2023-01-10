@@ -8,13 +8,13 @@ This ToDoListApp aims to show you how to integrate Material.io components.
 > Steve Galea
 
 # Prerequisites
-You must have the following dependencies installed.
+> Install master branch
+> Make sure all required dependencies are installed
+> Run expo start/ npx run start and test app (without added logic functionality)
 
-Windows: npx create-expo-app ToDoListApp
-Mac: npx create-expo-app -t expo-template-blank ToDoListApp
-
-We will be using material icons for this project, as a demonstration of using Material.io components.
+We will be using material icons Google font Comfortaa for this project, as a demonstration of using Material.io components.
 npm i react-native-vector-icons
+npm i expo-font
 
 # Package.json
 Double check the package.json... copy and paste any missing dependencies into your package.json:
