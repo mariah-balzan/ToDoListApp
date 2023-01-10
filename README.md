@@ -13,8 +13,8 @@ This ToDoListApp aims to show you how to integrate Material.io components.
 - Run expo start/ npx run start and test app (without added logic functionality)
 
 We will be using material icons Google font Comfortaa for this project, as a demonstration of using Material.io components.
-npm i react-native-vector-icons
-npm i expo-font
+- npm i react-native-vector-icons
+- npm i expo-font
 
 # Package.json
 Double check the package.json... copy and paste any missing dependencies into your package.json:
