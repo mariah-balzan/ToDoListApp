@@ -186,8 +186,6 @@ Consider you would like to add a react native button (refer to below link)
 Import your button
 ```
 import { Button } from "@react-native-material/core";
-
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 ```
 
 We would like this button to become outlined and to replace our clear todos icon in the top right 
