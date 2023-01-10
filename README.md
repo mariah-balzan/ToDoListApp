@@ -1,4 +1,4 @@
-# cis3186-material.io Presentation
+# CIS3186-material.io Presentation
 
 This ToDoListApp aims to show you how to integrate Material.io components. 
 
