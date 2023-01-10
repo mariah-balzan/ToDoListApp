@@ -50,7 +50,7 @@ npm i react-native
 npm i @react-native-async-storage/async-storage
 ```
 
-# Package.json [skip if every dependency was installed well]
+# Package.json 
 Double check the package.json
 Copy and paste any missing dependencies into your package.json:
    -  "@react-native-async-storage/async-storage": "^1.17.11",
@@ -63,6 +63,7 @@ Copy and paste any missing dependencies into your package.json:
    -  "react": "18.1.0",
   -   "react-native": "0.70.5",
   -   "react-native-vector-icons": "^9.2.0"
+[skip if every dependency was installed well]
 ```
 npm install --force or npm i <<dependency>>
 ```
