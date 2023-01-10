@@ -3,8 +3,8 @@
 This ToDoListApp aims to show you how to integrate Material.io components. 
 
 # Team 2
-> Mariah Balzan
-> Nicole Bezzina
+> Mariah Balzan,
+> Nicole Bezzina,
 > Steve Galea
 
 # Prerequisites
