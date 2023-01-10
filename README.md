@@ -8,9 +8,9 @@ This ToDoListApp aims to show you how to integrate Material.io components.
 > Steve Galea
 
 # Prerequisites
-> Install master branch
-> Make sure all required dependencies are installed
-> Run expo start/ npx run start and test app (without added logic functionality)
+- Install master branch
+- Make sure all required dependencies are installed
+- Run expo start/ npx run start and test app (without added logic functionality)
 
 We will be using material icons Google font Comfortaa for this project, as a demonstration of using Material.io components.
 npm i react-native-vector-icons
