@@ -1,6 +1,6 @@
 # CIS3186-material.io Presentation
 
-This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font.
+This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font. If we have time, we will then integrate other components such as buttons.
 
 # Team 2
 > Mariah Balzan,
@@ -201,7 +201,7 @@ We would like this button to become outlined and to replace our clear todos icon
       leading={(<Icon name="delete" />)}
     />```
 
-# Conclusion: implementing of visual cues: 
-- implement Loading code to show button is being pressed. refer to https://www.react-native-material.com/docs/components/button#loading
+# Other Remarks: See below link of activity indicators, such as loading: 
+- Refer to https://www.react-native-material.com/docs/components/activity-indicator and https://www.react-native-material.com/docs/components/button#loading
 
 # Thank you for your attention...
