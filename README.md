@@ -206,7 +206,6 @@ We would like this button to become outlined and to replace our clear todos icon
     />```
 
 # Other Remarks: See below link of design tokens and activity indicators, such as loading: 
-- import { BaseThemeSchema } from './base-theme-schema';
 
 Design tokens:
 - https://blog.bitsrc.io/how-we-use-design-tokens-in-react-5396dd897ace
