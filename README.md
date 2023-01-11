@@ -75,6 +75,7 @@ every icon is a circle (easy to click)
 - emphasis on simple screens
 - easy to read text- ample line spacing and padding
 - font size and weight are well chosen
+- 
 
 # Part 2: Adding Logic (Time required: 5-10 mins)
 Do all below while running
@@ -201,7 +202,12 @@ We would like this button to become outlined and to replace our clear todos icon
       leading={(<Icon name="delete" />)}
     />```
 
-# Other Remarks: See below link of activity indicators, such as loading: 
+# Other Remarks: See below link of design tokens and activity indicators, such as loading: 
+- import { BaseThemeSchema } from './base-theme-schema';
+
+Design tokens:
+- https://blog.bitsrc.io/how-we-use-design-tokens-in-react-5396dd897ace
+Activity Indicators
 - Refer to https://www.react-native-material.com/docs/components/activity-indicator and https://www.react-native-material.com/docs/components/button#loading
 
 # Thank you for your attention...
