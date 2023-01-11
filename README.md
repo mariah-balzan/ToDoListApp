@@ -2,7 +2,7 @@
 
 This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font. We will then integrate other components such as buttons.
 
-# Team 2
+# Team 3
 > Mariah Balzan,
 > Nicole Bezzina,
 > Steve Galea
@@ -78,7 +78,7 @@ every icon is a circle (easy to click)
 - emphasis on simple screens
 - easy to read text- ample line spacing and padding
 - font size and weight are well chosen
-- 
+
 
 # Part 2: Adding Logic (Time required: 5-10 mins)
 Do all below while running
