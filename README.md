@@ -19,38 +19,6 @@ This ToDoListApp aims to show you how to integrate Material.io components. We wi
  
 ```npm i ```
 
-
-We will then use the below @react-native-material/core dependency, to replace the default Button component with our material button component (in Part 3) [ https://www.react-native-material.com/docs/components/ ] 
-```
-npm i @react-native-material/core
-```
-
-Other dependencies needed
-```
-npm i expo-font
-```
-```
-npm i expo
-```
-```
-npm i expo-app-loading
-```
-```
-npm i expo-splash-screen
-```
-```
-npm i expo-status-bar
-```
-```
-npm i react
-```
-```
-npm i react-native
-```
-```
-npm i @react-native-async-storage/async-storage
-```
-
 # Package.json 
 Double check the package.json
 Copy and paste any missing dependencies into your package.json:
