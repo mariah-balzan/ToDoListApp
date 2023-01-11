@@ -1,6 +1,6 @@
 # CIS3186-material.io Presentation
 
-This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font. If we have time, we will then integrate other components such as buttons.
+This ToDoListApp aims to show you how to integrate Material.io components. We will be focusing specifically to add a font. We will then integrate other components such as buttons.
 
 # Team 2
 > Mariah Balzan,
@@ -10,16 +10,19 @@ This ToDoListApp aims to show you how to integrate Material.io components. We wi
 # Part 1: Setup | Example 1: using Material Icons | Notes on Accessibility & UI Choice (Time required: 5-10 mins)
 
 # Prerequisites
+- Set up an expo project as per the slides. 
+- Make sure all required dependencies are installed[See below]
 - Install master branch
-- Make sure all required dependencies are installed
-- Run expo start/ npx run start and test app (without added logic functionality)
+- Run expo start/ npx run start and test app (app should have stubbed material components without the added logic functionality. As we go along this will turn into a functional to do list app)
 
-We will be using material icons Google font Comfortaa for this project, as a demonstration (in Part 1) of using Material.io components. 
+# Prerequisites: Dependency installation
+
+We will be using material icons for this project (for Part 1). 
 ```
 npm i react-native-vector-icons
 ```
 
-We will then use another material library, and adapt our code together (in Part 3) [ https://www.react-native-material.com/docs/components/ ] 
+We will then use the below @react-native-material/core dependency, to replace the default Button component with our material button component (in Part 3) [ https://www.react-native-material.com/docs/components/ ] 
 ```
 npm i @react-native-material/core
 ```
