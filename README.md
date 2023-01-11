@@ -16,11 +16,9 @@ This ToDoListApp aims to show you how to integrate Material.io components. We wi
 - Run expo start/ npx run start and test app (app should have stubbed material components without the added logic functionality. As we go along this will turn into a functional to do list app)
 
 # Prerequisites: Dependency installation
+ 
+```npm i ```
 
-We will be using material icons for this project (for Part 1). 
-```
-npm i react-native-vector-icons
-```
 
 We will then use the below @react-native-material/core dependency, to replace the default Button component with our material button component (in Part 3) [ https://www.react-native-material.com/docs/components/ ] 
 ```
@@ -66,10 +64,6 @@ Copy and paste any missing dependencies into your package.json:
    -  "react": "18.1.0",
   -   "react-native": "0.70.5",
   -   "react-native-vector-icons": "^9.2.0"
-[skip if every dependency was installed well]
-```
-npm install --force or npm i <<dependency>>
-```
 
 # Note: Accessibility & User interface notes
 every icon is a circle (easy to click)
@@ -183,27 +177,8 @@ const clearTodos = () => {
   }
 ```  
 
-Notes: Now we have a fully functional todolist application.
+Now you have a fully functional todolist application.
 - application is ready for part 3...
-
-# Part 3: Adding additional components (example, add a button...)
-Consider you would like to add a react native button (refer to below link)
-```https://www.react-native-material.com/docs/components/button```
-
-Import your button:
-```
-import { Button } from "@react-native-material/core";
-```
-
-We would like this button to become outlined and to replace our clear todos icon in the top right -> locate Delete Icon```<Icon name="delete" size={30} color="red" onPress={clearTodos}/>
-      ``` and replace it with the below
--```<Button
-      variant="outlined"
-      title="Delete"
-      color='red'
-      onPress={clearTodos}
-      leading={(<Icon name="delete" />)}
-    />```
 
 # Other Remarks: See below link of design tokens and activity indicators, such as loading: 
 
